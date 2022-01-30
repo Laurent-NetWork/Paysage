@@ -1,0 +1,177 @@
+/*Laurent Clairicia - WebSite évaluation */
+
+/* style qui s'applique sur toute la page donc pas de marge et pas de padding car par défaut le navigateur met des dimensions */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: silver;
+  }
+  
+  /* le contenu principal de la page  */
+  .container {
+    width: 960px;
+    background-color: white;
+    margin: 0 auto;
+  }
+  /* contient la navigation et les reseaux en position flex  */
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .reseaux {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+  }
+  .reseaux button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    filter: contrast(1);
+  }
+  
+  .reseaux button:hover {
+    cursor: pointer;
+    filter: contrast(2);
+  }
+  
+  /* taille des images qui prends la taille de leurs parents button */
+  /* sm= small */
+  
+  .icon-sm {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn {
+    display: flex;
+  }
+  
+  .btn > button {
+    height: 60px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    color: black;
+    background-color: #76872b;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .btn > button:hover {
+    color: white;
+    background-color: #aac23e;
+    cursor: pointer;
+  }
+  
+  .hero-img {
+    height: 300px;
+    margin: 20px;
+    position: relative;
+  }
+  .hero-img img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero-img p {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: x-large;
+  }
+  
+  .hero-article {
+    margin: 20px;
+  }
+  
+  .hero-article > p {
+    font-size: 1em;
+    margin-top: 5px;
+  }
+  
+  .hero-article p a {
+    color: #76872b;
+  }
+  
+  .hero-article p a:hover {
+    color: #aac23e;
+  }
+  
+  .wordbold {
+    font-weight: bold;
+  }
+  
+  .tableau {
+    border: 1px solid black;
+    width: 920px;
+    margin: 20px;
+    border-collapse: collapse;
+  }
+  
+  .titre1 {
+    background-color: #aac23e;
+    font-weight: lighter;
+  }
+  
+  .tableau th,
+  td {
+    text-align: center;
+    width: 306.66px;
+    border: 1px solid black;
+  }
+  
+  .diapo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .diapo div {
+    border: 1px solid black;
+    padding: 5px;
+    width: 290px;
+    height: 500px;
+    position: relative;
+  }
+  .diapo div img {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .diapo div a {
+    text-decoration: none;
+    background-color: #76872b;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 5px;
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+  }
+  
+  .diapo div a:hover {
+    color: white;
+    background-color: #aac23e;
+  }
+  
+  footer {
+    background-color: black;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
